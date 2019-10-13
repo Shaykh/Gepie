@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gepie.Data", "Gepie.Data\Gepie.Data.csproj", "{B50280E2-71D9-4584-8BEF-3E4528AC259C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B50280E2-71D9-4584-8BEF-3E4528AC259C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B50280E2-71D9-4584-8BEF-3E4528AC259C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B50280E2-71D9-4584-8BEF-3E4528AC259C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B50280E2-71D9-4584-8BEF-3E4528AC259C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B293F749-8B17-47B8-B72E-C38FBE0B55CB}
+	EndGlobalSection
+EndGlobal
