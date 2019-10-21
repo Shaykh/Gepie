@@ -14,13 +14,13 @@ namespace Gepie.Data
 
         public CompteBancaire CompteBancaire { get; set; }
 
-        public virtual ICollection<BailleurFichier> Fichiers { get; set; }
-        public virtual ICollection<Batiment> Batiments { get; set; }
+        public virtual ICollection<Fichier> Fichiers { get; set; }
+        public virtual ICollection<BienImmobilier> Biens { get; set; }
 
         public Bailleur()
         {
             this.Fichiers = new HashSet<BailleurFichier>();
-            this.Batiments = new HashSet<Batiment>();
+            this.Biens = new HashSet<BienImmobilier>();
         }
     }
 }
