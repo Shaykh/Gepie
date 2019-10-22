@@ -6,7 +6,7 @@ namespace Gepie.Data
     public class Bailleur : Entite
     {
         public long BailleurID { get; set; }
-        public string CodeBailleur { get; set; }
+        public string Code { get; set; }
         public string Adresse { get; set; }
         public string ContactPrincipal { get; set; }
         public string ContactSecondaire { get; set; }

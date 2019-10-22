@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Gepie.Data
 {
-    public class BienImmobilier
+    public class BienImmobilier : Entite
     {
         public long BienImmobilierID { get; set; }
         public string Code { get; set; }
