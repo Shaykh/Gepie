@@ -13,7 +13,7 @@ namespace Gepie.Data
         public decimal MontantFacture { get; set; }
         public decimal ResteAPayer { get; set; }
         public byte EtatTraitement { get; set; }
-        public short Annee { get; set; }
+        public int Annee { get; set; }
         public DateTime DateEnregistrement { get; set; }
         public FactureObjet Objet { get; set; }
         public ContratBail ContratBail { get; set; }
