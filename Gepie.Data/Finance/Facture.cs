@@ -17,10 +17,10 @@ namespace Gepie.Data
         public DateTime DateEnregistrement { get; set; }
         public FactureObjet Objet { get; set; }
         public ContratBail ContratBail { get; set; }
-        public TransmissionFacture Transmission { get; set; }
+        public TransmissionFacture TransmissionFacture { get; set; }
         public RetourFacture RetourFacture { get; set; }
         public PriseEnChargeFacture PriseEnCharge { get; set; }
-        public RejetFacture RejetFacture { get; set; }
+        public RejetFacture Rejet { get; set; }
 
         public virtual ICollection<FactureFichier> Fichiers { get; set; }
         public virtual ICollection<Paiement> Paiements { get; set; }
