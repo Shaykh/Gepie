@@ -11,11 +11,11 @@ namespace Gepie.Data
         public DateTime DateRetour { get; set; }
         public byte Etat { get; set; }
 
-        public ICollection<RetourFacture> Factures { get; set; }
+        public ICollection<RetourFacture> RetourFactures { get; set; }
 
         public Retour()
         {
-            this.Factures = new HashSet<RetourFacture>();
+            this.RetourFactures = new HashSet<RetourFacture>();
         }
     }
 }

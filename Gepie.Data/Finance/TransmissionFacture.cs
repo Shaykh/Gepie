@@ -4,8 +4,8 @@ namespace Gepie.Data
     {
         public long FactureID { get; set; }
         public long TransmissionID { get; set; }
-        
-        public virtual Facture Facture { get; set; }
-        public virtual Transmission Transmission { get; set; }
+
+        public Facture Facture { get; set; }
+        public Transmission Transmission { get; set; }
     }
 }

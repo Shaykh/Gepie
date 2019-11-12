@@ -5,5 +5,7 @@ namespace Gepie.Data
         public long RejetFactureID { get; set; }
         public System.DateTime DateRejet { get; set; }
         public string MotifRejetDefinitif { get; set; }
+
+        public Facture Facture { get; set; }
     }
 }

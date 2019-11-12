@@ -1,11 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace Gepie.Data
 {
+    [DisplayName("Département")]
     public class Departement : DecoupageGeographique
     {
-        public short DepartementID { get; set; }
         public virtual ICollection<Localite> Localites { get; set; }
         public virtual Region Region { get; set; }
 

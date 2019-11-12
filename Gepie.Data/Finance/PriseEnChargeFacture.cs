@@ -11,6 +11,6 @@ namespace Gepie.Data
         public Nullable<System.DateTime> DateOrdreCB { get; set; }
         public Nullable<System.DateTime> DateOrdonnancement { get; set; }
 
-        public virtual Facture Facture { get; set; }
+        public Facture Facture { get; set; }
     }
 }

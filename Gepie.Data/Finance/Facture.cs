@@ -1,20 +1,28 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace Gepie.Data
 {
     public class Facture : Entite
     {
-        public long FactureID { get; set; }
-        public string NumeroFacture { get; set; }
+        public long Id { get; set; }
+        public string NumeroDeFacture { get; set; }
+        [DisplayName("Numéro d'ordre de paiement")]
         public string NumeroOrdrePaiement { get; set; }
+        [Required(ErrorMessage="La référence est obligatoire!")]
+        [DisplayName("Référence")]
         public string Reference { get; set; }
-        public string NatureRubrique { get; set; }
-        public decimal MontantFacture { get; set; }
-        public decimal ResteAPayer { get; set; }
-        public byte EtatTraitement { get; set; }
+        public string NatureDeRubrique { get; set; }
+        public decimal Montant { get; set; }
+        public decimal Solde { get; set; }
+        public EtatTraitementFacture EtatDeTraitement { get; set; }
+        [DisplayName("Année")]
         public int Annee { get; set; }
+        [DisplayName("Date d'enregistrement")]
         public DateTime DateEnregistrement { get; set; }
+
         public FactureObjet Objet { get; set; }
         public ContratBail ContratBail { get; set; }
         public TransmissionFacture TransmissionFacture { get; set; }
@@ -22,8 +30,8 @@ namespace Gepie.Data
         public PriseEnChargeFacture PriseEnCharge { get; set; }
         public RejetFacture Rejet { get; set; }
 
-        public virtual ICollection<FactureFichier> Fichiers { get; set; }
-        public virtual ICollection<Paiement> Paiements { get; set; }
+        public ICollection<FactureFichier> Fichiers { get; set; }
+        public ICollection<Paiement> Paiements { get; set; }
 
         public Facture()
         {

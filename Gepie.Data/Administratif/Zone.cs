@@ -1,11 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace Gepie.Data
 {
+    [DisplayName("Zone administrative")]
     public class Zone : DecoupageGeographique
     {
-        public short ZoneID { get; set; }
         public ICollection<Region> Regions { get; set; }
 
         public Zone()
