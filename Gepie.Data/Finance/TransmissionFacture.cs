@@ -2,8 +2,7 @@ namespace Gepie.Data
 {
     public class TransmissionFacture : Entite
     {
-        public long FactureID { get; set; }
-        public long TransmissionID { get; set; }
+        public long Id { get; set; }
 
         public Facture Facture { get; set; }
         public Transmission Transmission { get; set; }

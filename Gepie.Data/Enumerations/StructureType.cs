@@ -10,8 +10,9 @@ namespace Gepie.Data.Enumerations
         [Description("Direction")]
         Direction = 2,
         [Description("Cabinet ministériel")]
-        Service = 3,
+        Ministere = 3,
         [Description("Institution")]
         Institution = 4,
+        // Todo Verify enumeration
     }
 }

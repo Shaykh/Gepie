@@ -11,5 +11,6 @@ namespace Gepie.Data.Enumerations
         ReelSimplifie = 2,
         [Description("Régime réel normal")]
         ReelNormal = 3,
+        // Todo Verify enumeration
     }
 }

@@ -1,12 +1,14 @@
-using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace Gepie.Data
 {
     public class FactureObjet : Entite
     {
-        public short ObjetID { get; set; }  
-        public string Libelle { get; set; } 
+        public short Id { get; set; }
+        [DisplayName("Libellé")]
+        public string Libelle { get; set; }
+
         public ICollection<Facture> Factures { get; set; }
 
         public FactureObjet()

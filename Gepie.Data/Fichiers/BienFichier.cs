@@ -1,5 +1,3 @@
-using System;
-
 namespace Gepie.Data
 {
     public class BienFichier : Fichier

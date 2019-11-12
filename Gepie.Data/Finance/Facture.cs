@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using Gepie.Data.Enumerations;
 
 namespace Gepie.Data
 {
@@ -18,7 +19,7 @@ namespace Gepie.Data
         public decimal Montant { get; set; }
         public decimal Solde { get; set; }
         public EtatTraitementFacture EtatDeTraitement { get; set; }
-        [DisplayName("Année")]
+        [DisplayName("Exercice Budgétaire")]
         public int Annee { get; set; }
         [DisplayName("Date d'enregistrement")]
         public DateTime DateEnregistrement { get; set; }

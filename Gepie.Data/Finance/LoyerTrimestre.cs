@@ -1,7 +1,9 @@
+using Gepie.Data.Enumerations;
+
 namespace Gepie.Data
 {
     public class LoyerTrimestre : Facture
     {
-        public byte TrimestreID { get; set; }
+        public Trimestre Trimestre { get; set; }
     }
 }

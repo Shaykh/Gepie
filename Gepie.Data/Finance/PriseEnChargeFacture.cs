@@ -1,15 +1,25 @@
+using System;
+using System.ComponentModel;
+
 namespace Gepie.Data
 {
     public class PriseEnChargeFacture : Entite
     {
-        public long PriseEnChargeFactureID { get; set; }
-        public Nullable<System.DateTime> DateValidationDAF { get; set; }
-        public Nullable<System.DateTime> DateValidationDG { get; set; }
-        public Nullable<System.DateTime> DateValidationCB { get; set; }
-        public Nullable<System.DateTime> DateEngagement { get; set; }
-        public Nullable<System.DateTime> DateOrdreDG { get; set; }
-        public Nullable<System.DateTime> DateOrdreCB { get; set; }
-        public Nullable<System.DateTime> DateOrdonnancement { get; set; }
+        public long Id { get; set; }
+        [DisplayName("Date de validation par la DAF")]
+        public DateTime? DateValidationDAF { get; set; }
+        [DisplayName("Date de validation par l'ordonnateur")]
+        public DateTime? DateValidationDG { get; set; }
+        [DisplayName("Date de validation par le contrôleur budgétaire")]
+        public DateTime? DateValidationCB { get; set; }
+        [DisplayName("Date de d'engagement")]
+        public DateTime? DateEngagement { get; set; }
+        [DisplayName("Date d'ordonnancement par l'ordonnateur")]
+        public DateTime? DateOrdreDG { get; set; }
+        [DisplayName("Date d'ordonnancement par le contrôleur budgétaire")]
+        public DateTime? DateOrdreCB { get; set; }
+        [DisplayName("Date d'ordonnancement")]
+        public DateTime? DateOrdonnancement { get; set; }
 
         public Facture Facture { get; set; }
     }
