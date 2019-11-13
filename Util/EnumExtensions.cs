@@ -9,7 +9,7 @@ namespace Gepie.Util
         public static string GetDescription(this Enum GenericEnum)
         {
             Type genericEnumType = GenericEnum.GetType();
-            Memberinfo[] memberInfo = genericEnumType.GetMember(GenericEnum.ToString());
+            MemberInfo[] memberInfo = genericEnumType.GetMember(GenericEnum.ToString());
             if ((memberInfo != null && memberInfo.Length > 0))
             {
                 var attribs = memberInfo[0].GetCustomAttributes(typeof(System.ComponentModel.DescriptionAttribute), false);
