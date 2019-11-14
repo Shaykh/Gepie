@@ -5,7 +5,7 @@ namespace Gepie.Util
     public static class ValueExtension
     {
         public const string CULTURE_STRING_CI = "fr-CI";
-     
+
         public static string Display(this decimal nombre)
         {
             return nombre.ToString("### ### ### ### ##0.###").Trim();
@@ -15,7 +15,7 @@ namespace Gepie.Util
         {
             return nombre.HasValue ? nombre.Value.Display() : "Non Défini";
         }
-        
+
         public static string Display(this double nombre)
         {
             return nombre.ToString("### ### ### ### ##0.###").Trim();

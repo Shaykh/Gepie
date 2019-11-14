@@ -21,7 +21,7 @@ namespace Gepie.Util
         {
             return value.ToString(FORMAT_DATE);
         }
-        
+
         public static string Display(this DateTime? value)
         {
             return value.HasValue ? value.Value.Display() : "Non Défini";
