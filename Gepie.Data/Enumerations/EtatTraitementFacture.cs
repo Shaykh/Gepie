@@ -2,7 +2,6 @@ using System.ComponentModel;
 
 namespace Gepie.Data.Enumerations
 {
-    [DisplayName("Étape de traitement")]
     public enum EtatTraitementFacture : sbyte
     {
         [Description("Enregistrement")]

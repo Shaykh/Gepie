@@ -2,7 +2,6 @@ using System.ComponentModel;
 
 namespace Gepie.Data.Enumerations
 {
-    [DisplayName("Type de Structure")]
     public enum StructureType : sbyte
     {
         [Description("Institution")]

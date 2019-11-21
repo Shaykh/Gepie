@@ -2,7 +2,6 @@ using System.ComponentModel;
 
 namespace Gepie.Data.Enumerations
 {
-    [DisplayName("Usage")]
     public enum UsageBien
     {
         Logement = 1,

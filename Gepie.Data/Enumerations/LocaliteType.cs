@@ -2,7 +2,6 @@ using System.ComponentModel;
 
 namespace Gepie.Data.Enumerations
 {
-    [DisplayName("Type de Localité")]
     public enum LocaliteType : sbyte
     {
         [Description("Sous-Préfecture")]

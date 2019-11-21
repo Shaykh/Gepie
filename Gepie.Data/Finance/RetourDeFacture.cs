@@ -6,7 +6,7 @@ using Gepie.Data.Enumerations;
 
 namespace Gepie.Data
 {
-    public class Retour : Entite
+    public class RetourDeFacture : Entite
     {
         public long Id { get; set; }
         [Required]
@@ -19,7 +19,7 @@ namespace Gepie.Data
 
         public ICollection<RetourFacture> RetourFactures { get; set; }
 
-        public Retour()
+        public RetourDeFacture()
         {
             this.RetourFactures = new HashSet<RetourFacture>();
         }

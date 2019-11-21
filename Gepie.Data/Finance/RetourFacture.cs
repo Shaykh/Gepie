@@ -4,7 +4,7 @@ namespace Gepie.Data
     {
         public long Id { get; set; }
 
-        public Retour Retour { get; set; }
+        public RetourDeFacture Retour { get; set; }
         public Facture Facture { get; set; }
     }
 }

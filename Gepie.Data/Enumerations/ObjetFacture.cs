@@ -2,7 +2,6 @@ using System.ComponentModel;
 
 namespace Gepie.Data
 {
-    [DisplayName("Objet de Facture")]
     public enum ObjetFacture : sbyte
     {
         [Description("Loyer")]
@@ -16,6 +15,6 @@ namespace Gepie.Data
         [Description("Frais d'agence")]
         FraisAgence = 5,
         [Description("Charge Locative")]
-        ChargeLocative = 6  
+        ChargeLocative = 6
     }
 }

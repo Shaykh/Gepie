@@ -2,7 +2,6 @@ using System.ComponentModel;
 
 namespace Gepie.Data.Enumerations
 {
-    [DisplayName("Type d'Utilisateur")]
     public enum UtilisateurType : sbyte
     {
         [Description("Agent de la DE")]
